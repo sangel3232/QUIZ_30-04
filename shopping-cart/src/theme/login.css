@@ -28,5 +28,6 @@
   position: absolute;
   bottom: 100px; /* Ajusta la distancia desde la parte inferior */
   left: 20%; /* Faltando un 20% de la pantalla desde el borde izquierdo */
-  width: 60%; /* Ancho del botón */
+  width: 60%;
+  top: 55vh /* Ancho del botón */
 }

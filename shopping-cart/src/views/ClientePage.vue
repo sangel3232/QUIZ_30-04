@@ -13,7 +13,8 @@
             <InputComponent type="number" id="Documento" name="Documento" label="Documento: " />
             <InputComponent id="nombre" name="nombre" label="Nombre: " />
             <InputComponent id="direccion" name="direccion" label="Dirección: " />
-            <InputComponent id="metodoPago" name="metodoPago" label="Método Pago: " />            
+            <InputComponent id="metodoPago" name="metodoPago" label="Método Pago: " />  
+                  
           </div>
   
           <div> 
@@ -30,6 +31,8 @@
   import ButtonComponent from '@/components/ButtonComponent.vue';
   import InputComponent from '@/components/InputComponent.vue';
   import CrudButtonComponent from '@/components/CrudButtonComponent.vue';
+  import Id_Codigo_Name from '@/components/Id_Codigo_Name.vue';
+
   </script>
   
   <style scoped src="../theme/container.css"></style>

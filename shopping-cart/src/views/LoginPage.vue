@@ -14,8 +14,14 @@
           <InputComponent v-model="password" type="password" id="password" name="password" label="Contraseña: " placeholder="Introduce tu contraseña" />
         </div>
         <div class="login-button">
+          <br>
           <ButtonComponent id="login" value="Iniciar Sesión" expand="full" @click="login" />
           <ButtonComponent id="forgotPassword" value="Olvidé mi contraseña" expand="full" />
+          <ButtonComponent href="/pais" value="pais" expand="full"  color="success" />
+          <ButtonComponent href="/departamento" value="Departamento" expand="full" color="success" />
+          <ButtonComponent href="/ciudad" value="Ciudad" expand="full" color="success" />
+         
+
         </div>
       </div>
     </ion-page>
@@ -26,6 +32,7 @@
   import { IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
   import ButtonComponent from '@/components/ButtonComponent.vue';
   import InputComponent from '@/components/InputComponent.vue';
+  import PaisPage from './PaisPage.vue';
   
   const user = ref('');
   const password = ref('');

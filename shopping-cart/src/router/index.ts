@@ -5,12 +5,14 @@ import ClientePage from '../views/ClientePage.vue'
 import LoginPage from '../views/LoginPage.vue'
 import DasboardPage from '../views/DasboardPage.vue'
 import ProductoPage from '@/views/ProductoPage.vue';
-import Id_Codigo_NamePage from '@/views/Id_Codigo_NamePage.vue';
 
+import CiudadPage from '@/views/CiudadPage.vue';
+import PaisPage from '@/views/PaisPage.vue';
+import DepartamentoPage from '@/views/DepartamentoPage.vue';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/Id_Codigo_Name'
+    redirect: '/home'
   },
   {
     path: '/home',
@@ -37,10 +39,24 @@ const routes: Array<RouteRecordRaw> = [
     component: ProductoPage
   },
   {
-    path: '/id_Codigo_Name',
-    name: 'Id_Codigo_Name',
-    component: Id_Codigo_NamePage
+    path: '/pais',
+    name: 'Pais',
+    component: PaisPage
+  },
+  {
+    path: '/ciudad',
+    name: 'Ciudad',
+    component:CiudadPage
+  },
+  {
+    path: '/departamento',
+    name: 'Departamento',
+    component:DepartamentoPage
   }
+
+
+
+  
 ]
 
 const router = createRouter({
